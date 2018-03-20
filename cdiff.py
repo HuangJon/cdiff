@@ -71,6 +71,11 @@ VCS_INFO = {
         'diff': ['hg', 'diff'],
         'log': ['hg', 'log', '--patch'],
     },
+    'Perforce': {
+        'probe': ['p4', 'info'],
+        'diff': ['p4', 'diff'],
+        'log': ['echo', '*** perforce does not support showing log with diff'],
+    },
     'Svn': {
         'probe': ['svn', 'info'],
         'diff': ['svn', 'diff'],
